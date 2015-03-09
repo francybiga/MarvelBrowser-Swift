@@ -3,4 +3,4 @@ My own attempt to build a TDD Sample App following Jon Reid's Marvel Browser (se
 
 API Keys
 -------
-Make a copy of `Keys.example.xcconfig` into `Keys.xcconfig`, and edit it with your Marvel API Keys.
+Create a new plist file called "configuration.plist" with your Marvel API Keys and add it to your app bundle (follow the template "configuration.plist.example").

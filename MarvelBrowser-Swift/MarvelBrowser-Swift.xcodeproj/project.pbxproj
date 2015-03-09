@@ -13,6 +13,7 @@
 		25CFFC661A96192600663225 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25CFFC651A96192600663225 /* Images.xcassets */; };
 		25CFFC691A96192600663225 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25CFFC671A96192600663225 /* LaunchScreen.xib */; };
 		25CFFC751A96192600663225 /* MarvelBrowser_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CFFC741A96192600663225 /* MarvelBrowser_SwiftTests.swift */; };
+		25EC68B51AADA8BD00C16A79 /* configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25EC68B41AADA8BD00C16A79 /* configuration.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		25CFFC731A96192600663225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25CFFC741A96192600663225 /* MarvelBrowser_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelBrowser_SwiftTests.swift; sourceTree = "<group>"; };
 		25EC68B31AADA10E00C16A79 /* configuration.plist.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = configuration.plist.example.plist; path = Resources/configuration.plist.example.plist; sourceTree = "<group>"; };
+		25EC68B41AADA8BD00C16A79 /* configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = configuration.plist; path = Resources/configuration.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				25CFFC5D1A96192600663225 /* Info.plist */,
 				25EC68B31AADA10E00C16A79 /* configuration.plist.example.plist */,
+				25EC68B41AADA8BD00C16A79 /* configuration.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25CFFC641A96192600663225 /* Main.storyboard in Resources */,
+				25EC68B51AADA8BD00C16A79 /* configuration.plist in Resources */,
 				25CFFC691A96192600663225 /* LaunchScreen.xib in Resources */,
 				25CFFC661A96192600663225 /* Images.xcassets in Resources */,
 			);
