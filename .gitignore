@@ -39,4 +39,4 @@ DerivedData
 *.xcuserstate
 
 #Private proj files
-Keys.xcconfig
+configuration.plist

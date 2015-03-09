@@ -36,6 +36,7 @@
 		25CFFC6E1A96192600663225 /* MarvelBrowser-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MarvelBrowser-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25CFFC731A96192600663225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25CFFC741A96192600663225 /* MarvelBrowser_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelBrowser_SwiftTests.swift; sourceTree = "<group>"; };
+		25EC68B31AADA10E00C16A79 /* configuration.plist.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = configuration.plist.example.plist; path = Resources/configuration.plist.example.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				25CFFC5D1A96192600663225 /* Info.plist */,
+				25EC68B31AADA10E00C16A79 /* configuration.plist.example.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
