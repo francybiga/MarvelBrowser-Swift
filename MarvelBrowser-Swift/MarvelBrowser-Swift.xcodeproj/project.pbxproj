@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25CFFC5F1A96192600663225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CFFC5E1A96192600663225 /* AppDelegate.swift */; };
-		25CFFC611A96192600663225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CFFC601A96192600663225 /* ViewController.swift */; };
+		25CFFC5F1A96192600663225 /* MBSAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CFFC5E1A96192600663225 /* MBSAppDelegate.swift */; };
+		25CFFC611A96192600663225 /* MBSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CFFC601A96192600663225 /* MBSViewController.swift */; };
 		25CFFC641A96192600663225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25CFFC621A96192600663225 /* Main.storyboard */; };
 		25CFFC661A96192600663225 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25CFFC651A96192600663225 /* Images.xcassets */; };
 		25CFFC691A96192600663225 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25CFFC671A96192600663225 /* LaunchScreen.xib */; };
@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		25CFFC591A96192600663225 /* MarvelBrowser-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MarvelBrowser-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25CFFC5D1A96192600663225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25CFFC5E1A96192600663225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25CFFC601A96192600663225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25CFFC5E1A96192600663225 /* MBSAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBSAppDelegate.swift; sourceTree = "<group>"; };
+		25CFFC601A96192600663225 /* MBSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBSViewController.swift; sourceTree = "<group>"; };
 		25CFFC631A96192600663225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25CFFC651A96192600663225 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		25CFFC681A96192600663225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -87,8 +87,8 @@
 		25CFFC5B1A96192600663225 /* MarvelBrowser-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				25CFFC5E1A96192600663225 /* AppDelegate.swift */,
-				25CFFC601A96192600663225 /* ViewController.swift */,
+				25CFFC5E1A96192600663225 /* MBSAppDelegate.swift */,
+				25CFFC601A96192600663225 /* MBSViewController.swift */,
 				25CFFC621A96192600663225 /* Main.storyboard */,
 				25CFFC651A96192600663225 /* Images.xcassets */,
 				25CFFC671A96192600663225 /* LaunchScreen.xib */,
@@ -293,8 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25CFFC611A96192600663225 /* ViewController.swift in Sources */,
-				25CFFC5F1A96192600663225 /* AppDelegate.swift in Sources */,
+				25CFFC611A96192600663225 /* MBSViewController.swift in Sources */,
+				25CFFC5F1A96192600663225 /* MBSAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
