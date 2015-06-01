@@ -14,6 +14,7 @@
 		25CFFC691A96192600663225 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25CFFC671A96192600663225 /* LaunchScreen.xib */; };
 		25CFFC751A96192600663225 /* MarvelBrowser_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CFFC741A96192600663225 /* MarvelBrowser_SwiftTests.swift */; };
 		25EC68B51AADA8BD00C16A79 /* configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25EC68B41AADA8BD00C16A79 /* configuration.plist */; };
+		85F06565F7BBF6E3F54D0A74 /* Pods_MarvelBrowser_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31304A8F72D323FB25CA6027 /* Pods_MarvelBrowser_Swift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,9 @@
 		25CFFC741A96192600663225 /* MarvelBrowser_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelBrowser_SwiftTests.swift; sourceTree = "<group>"; };
 		25EC68B31AADA10E00C16A79 /* configuration.plist.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = configuration.plist.example.plist; path = Resources/configuration.plist.example.plist; sourceTree = "<group>"; };
 		25EC68B41AADA8BD00C16A79 /* configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = configuration.plist; path = Resources/configuration.plist; sourceTree = "<group>"; };
+		31304A8F72D323FB25CA6027 /* Pods_MarvelBrowser_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelBrowser_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		393F48C03DD0A3FFE6A23E6B /* Pods-MarvelBrowser-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelBrowser-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelBrowser-Swift/Pods-MarvelBrowser-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		FE649631C0939BCEB7EA9998 /* Pods-MarvelBrowser-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelBrowser-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelBrowser-Swift/Pods-MarvelBrowser-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F06565F7BBF6E3F54D0A74 /* Pods_MarvelBrowser_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,8 @@
 				25CFFC5B1A96192600663225 /* MarvelBrowser-Swift */,
 				25CFFC711A96192600663225 /* MarvelBrowser-SwiftTests */,
 				25CFFC5A1A96192600663225 /* Products */,
+				3CC6E2DF2B81BCF7B15638AF /* Pods */,
+				7A5A740259873F876E468C57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +124,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3CC6E2DF2B81BCF7B15638AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				393F48C03DD0A3FFE6A23E6B /* Pods-MarvelBrowser-Swift.debug.xcconfig */,
+				FE649631C0939BCEB7EA9998 /* Pods-MarvelBrowser-Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A5A740259873F876E468C57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31304A8F72D323FB25CA6027 /* Pods_MarvelBrowser_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25CFFC781A96192600663225 /* Build configuration list for PBXNativeTarget "MarvelBrowser-Swift" */;
 			buildPhases = (
+				38446163877C7F84DC994270 /* Check Pods Manifest.lock */,
 				25CFFC551A96192600663225 /* Sources */,
 				25CFFC561A96192600663225 /* Frameworks */,
 				25CFFC571A96192600663225 /* Resources */,
+				A04CDBF4CC3849B456E1ADDA /* Embed Pods Frameworks */,
+				C79521DF73E2EBBD173D8BE4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +239,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38446163877C7F84DC994270 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A04CDBF4CC3849B456E1ADDA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelBrowser-Swift/Pods-MarvelBrowser-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C79521DF73E2EBBD173D8BE4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelBrowser-Swift/Pods-MarvelBrowser-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		25CFFC551A96192600663225 /* Sources */ = {
@@ -344,6 +419,7 @@
 		};
 		25CFFC791A96192600663225 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 393F48C03DD0A3FFE6A23E6B /* Pods-MarvelBrowser-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
@@ -355,6 +431,7 @@
 		};
 		25CFFC7A1A96192600663225 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE649631C0939BCEB7EA9998 /* Pods-MarvelBrowser-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
